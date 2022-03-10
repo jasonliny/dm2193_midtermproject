@@ -84,6 +84,16 @@ body {
   border-radius: 5px;
   align-self: center;
 }
+.section img:hover {
+  transform: scale(1.5);
+  transform-origin: bottom center;
+}
+.section:first-child img:hover {
+  transform-origin: bottom left;
+}
+.section:last-child img:hover {
+  transform-origin: bottom right;
+}
 .section span {
   display: inline-block;
   font-family: 'Open Sans';
@@ -124,6 +134,9 @@ body {
 .project img {
   width: 98%;
   align-self: center;
+}
+.project img:hover {
+  transform: scale(1.02);
 }
 .project p {
   margin: 0px;
