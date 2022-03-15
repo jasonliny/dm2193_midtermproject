@@ -1,15 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans&family=Spartan&display=swap');
+@font-face {
+  font-family: 'Didact Gothic';
+  src: url('fonts/Didact_Gothic/DidactGothic-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf')
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: normal;
+  src: url('fonts/Spartan/Spartan-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: bold;
+  src: url('fonts/Spartan/static/Spartan-Bold.ttf');
+}
 * {
   box-sizing: border-box;
 }
 body {
   background: radial-gradient(circle, rgb(255,240,190) 0%, rgb(255,230,250) 50%, rgb(190,255,250) 100%);
-
+  padding: 25px;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-top: 35px;
+  margin-bottom: 50px;
   font-family: 'Spartan';
 }
 .header span {
@@ -18,6 +36,9 @@ body {
 .header h1 {
   display: inline-block;
   margin: 0px auto;
+  padding: 10px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: #ddddff;
 }
 .header a,a:visited {
   color: black;
@@ -37,8 +58,10 @@ body {
 }
 
 .pre-content {
+    margin-top: 50px;
+  margin-bottom: 50px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 35px;
   background: linear-gradient(145deg, #e6cee5, #fff5ff);
   box-shadow:  8px 8px 10px #ccb7cb,
                -8px -8px 10px #ffffff;
@@ -49,24 +72,23 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 50px;
 }
 
 .row {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 25px;
 }
 .row h1 {
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 25px 0px;
   font-family: 'Didact Gothic';
 }
 .nested-row {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-
   column-gap: 35px;
 }
 .section {
@@ -87,6 +109,7 @@ body {
 .section img:hover {
   transform: scale(1.5);
   transform-origin: bottom center;
+  transition: transform .5s;
 }
 .section:first-child img:hover {
   transform-origin: bottom left;
@@ -137,6 +160,7 @@ body {
 }
 .project img:hover {
   transform: scale(1.02);
+  transition: transform .5s;
 }
 .project p {
   margin: 0px;
