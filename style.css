@@ -153,10 +153,10 @@ body {
   background: linear-gradient(145deg, #97dde6, #b4ffff);
   box-shadow:  8px 8px 10px #8fd0d9,
                -8px -8px 10px #c1ffff;
+  text-align: center;
 }
 .project img {
   width: 98%;
-  align-self: center;
 }
 .project img:hover {
   transform: scale(1.02);
@@ -164,6 +164,5 @@ body {
 }
 .project p {
   margin: 0px;
-  text-align: center;
   font-family: 'Open Sans';
 }
