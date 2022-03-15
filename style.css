@@ -100,11 +100,11 @@ body {
   background: linear-gradient(145deg, #e6de93, #ffffae);
   box-shadow:  8px 8px 10px #c7c17f,
                -8px -8px 10px #ffffc7;
+  text-align: center;
 }
 .section img {
   width: 98%;
   border-radius: 5px;
-  align-self: center;
 }
 .section img:hover {
   transform: scale(1.5);
@@ -125,13 +125,10 @@ body {
 .section span a,a:visited{
   text-decoration: none;
 }
-.section p {
-  margin: 0px;
-  align-self: flex-end
-}
 .section ul {
   margin: 5px 0px;
   padding-left: 25px;
+  text-align: left;
 }
 .section li {
   font-family: 'Open Sans';
