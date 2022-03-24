@@ -111,10 +111,10 @@ body {
   transform: scale(1.5);
   transform-origin: bottom center;
 }
-.section:first-child img:hover {
+.section:first-child img {
   transform-origin: bottom left;
 }
-.section:last-child img:hover {
+.section:last-child img {
   transform-origin: bottom right;
 }
 .section span {
