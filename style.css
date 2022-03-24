@@ -105,11 +105,11 @@ body {
 .section img {
   width: 98%;
   border-radius: 5px;
+  transition: transform .5s;
 }
 .section img:hover {
   transform: scale(1.5);
   transform-origin: bottom center;
-  transition: transform .5s;
 }
 .section:first-child img:hover {
   transform-origin: bottom left;
@@ -154,10 +154,10 @@ body {
 }
 .project img {
   width: 98%;
+  transition: transform .5s;
 }
 .project img:hover {
   transform: scale(1.02);
-  transition: transform .5s;
 }
 .project p {
   margin: 0px;
